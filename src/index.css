@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Amiri", "Playfair Display", Georgia, serif;
+  --font-sans: "Cairo", "Inter", system-ui, sans-serif;
+  
+  --color-oxford-blue: #002147;
+  --color-oxford-navy: #001229;
+  --color-oxford-gold: #c5a059;
+  --color-oxford-sand: #f4f4f4;
+  --color-alayen-green: #0b663e;
+  --color-alayen-gold: #c5a059;
+  
+  --animate-fade-in-up: fade-in-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-pulse-slow: pulse-slow 3s infinite ease-in-out;
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+/* Custom scrollbar matching the premium academic aesthetics */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f4f4f4;
+}
+::-webkit-scrollbar-thumb {
+  background: #002147;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c5a059;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-oxford-sand);
+  color: #1a1a1a;
+  overflow-x: hidden;
+}
+
+/* Fallback Design Classes from Geometric Balance HTML */
+.serif {
+  font-family: var(--font-serif);
+}
+
+.oxford-blue {
+  background-color: #002147;
+}
+
+.gold-accent {
+  color: #c5a059;
+}
+
+.border-gold {
+  border-color: #c5a059;
+}
+
+.hero-gradient {
+  background: linear-gradient(rgba(0,33,71,0.85), rgba(0,33,71,0.85));
+}

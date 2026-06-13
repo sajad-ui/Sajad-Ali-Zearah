@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Al-Ayen Iraqi University",
+  "description": "An elegant, ultra-modern academic portal for Al-Ayen Iraqi University in Nasiriyah, designed in the majestic style of Oxford University, featuring live real-time clock and interactive student utilities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
